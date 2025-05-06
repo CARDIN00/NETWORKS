@@ -1,0 +1,58 @@
+VULNERABILITIES AT EACH LAYER:
+
+# Apploication layer:
+::Direct interface bw the end uer applications and email , file transfer , web browsing and remote logins:
+::It does not reffer to the applications themselves bu the protocols that the applicatoins use to communicate over the network:
+
+http/s,  ssh, telnet , ftp, SFTP, DNS
+
+:::::COMMON VULNERABILITIES:
+INJECTION ATTACKS:
+CROSS SITE SCRIPTING:
+CROSS SITE REQUEST FORGERY:
+DIRECOTRY TRAVERSAL:
+
+# PRESENTATION LAYER:
+::Responsibe for transfering data , encrypting it and comressing it for the lower level layers/
+:: Ensures that the data sent by the application layer of one system is readable by the application layer of the other.
+
+JPEG/JPG, GIF,ASCII,JSON,MP4, SSL/TLS
+
+SSL/TLS :(Secure socket layer/Transort layer security) : are the cryptographic protocols that ensure safe communication over a network.
+
+::::::VULNERABILITIES:
+Acceping the self signed certificates without user warning (Digital certificatios that applroves the sserver's identity).
+Weak or broken encryption.
+
+
+# SESSION LAYER:
+::Manages and Controls the dialogue(Session) between two computers.
+::Responsible for establishing and mentaining and terminating the connections between the application.
+::Ensures that the sessions are synchronized and organized.
+
+::::::VULNERABILITIES:
+1::  SESSION HIJACKING ,
+2::  SESSION FIXATION,(Attacker sets a known session ID and tricks a victim into using it. Once the victim logs in, attacker uses the same ID to access the account.)
+3:: INSECURE SESSION TOKEN GENERATION
+
+# TRANSPORT LAYER:
+:: Rensponsible for end to end to end communication, reliable date transfer, error recovery.
+:: Ensure that the data is delivered accurately.
+
+UDP, TCP.
+
+:::::: VULNERABILITIES ::
+TCP SYN Flood (DoS attack)
+UDP Flood,(Massive volume of the UDP packets to the random ports overwhelming the systems)
+Port Scanning
+Fragmentation Attacks
+
+# Network Layer
+Responsible for Routing the packets.
+Determines the best parth for the packerts.
+Handles LOGICAL ADDRESSING ( Logical addressing refers to assigning unique IP addresses to devices on a network so they can be identified and located across different networks.)
+
+IP (Internet Protocol): IPv4, IPv6, 
+ICMP (Internet Control Message Protocol): Used by ping, traceroute
+IGMP,
+RIP
