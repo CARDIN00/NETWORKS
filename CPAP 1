@@ -1,0 +1,59 @@
+# LAN
+high speed
+small area
+
+# WAN
+wide area network
+for large area
+connects lans
+
+# MAN
+matropolitian area network
+connects lan accross the city
+
+# OSI:
+
+7 Application
+6 Presentation
+5 Session
+4 Transport
+3 Network
+2 Data-link
+1 Physical 
+
+## 7 Application:
+Interface bw the user application and the user
+the user interacts with the application which interacts with the protocol
+FTP,HTTP/S, POP3, SMTP, TELNET
+
+VULNERABILITIES::
+
+
+## 6 Presentation:
+Controls the formatting and the syntax of the user data for the application.
+Ensures the data can be understood by the reciever.
+#### If two devices do not support the same formate or syntax then the layer can provide the conversion or translation service
+Performs Encryption and Compressoin.
+
+## 5 Session:
+Establish , mantain and terminate the session bw the users.
+
+
+##### till layer 5 from 7 are the upper layers: i.e, they handle the appliaction level functions, interact with the user.
+## 4 Transport:
+Reliable transfer of Data by ensuring that the date reaches the destination error free, not the actual data transfer.
+#### TCP 
+connection oriented
+#### UDP
+connection-less
+
+## 3 Network:
+Controls the internetwork communucation
+TWO KEYS:
+LOGICAL ADDRESSING
+provides unique address the identifier that identifie both the host and the network that the host exists on.
+ROUTING
+determines the best parth for the data packets to travle
+## 2 Data-link:
+Responsible for transporing data "WITHIN" the network.
+## 1 Physical ;
