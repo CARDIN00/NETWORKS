@@ -1,0 +1,32 @@
+# HUBS (REPEATERS)
+Layer 1 devices
+physically connect devices together for communication.
+No intelligent forwarding.
+Forward every FRAME to "every" Port.
+
+
+# SWITCHES
+Layer 2 devices.
+Contain:: 1: Hardware address for hosts
+               2: the port each harware address is associated with.
+the Layer 2 devices will make intelligent forwarding decisionsbased on the  data_link headers.
+A frame can then be forwarded out only to the appropriate destination port.
+
+
+# ROUTERS
+Layer -3 device:
+Forwards the packets from one Network to another Network.
+BASED ON THE DESTINATION "NETWORK" NOT THE DESTINATION HOST
+
+
+# Layer-3 Switching vs. Layer-3 Routing
+Layer 3 switching:
+can perfrom the layer 2 protocols as well as the layer 3 protocols.
+Generally have the higher port densities than the routers.
+Optimized for the Ethernet. Predominantly user for INTRA-VLAN rouing
+Uses as the backbone on the LAN or campus level network
+
+Layer 3 Routers:
+Support more advanced feature sets.
+Support Large number of WAN technologies.
+Used on the Network parameters, connecting WAN environments.
