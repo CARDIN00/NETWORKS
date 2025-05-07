@@ -1,0 +1,19 @@
+STP :
+develped to orevent the broadcast storm caused by the switchig loops.
+::
+The switches that run the STP will build the MAP of entire switching network.
+STP will identify if there is any loops, and then disable or block as many blocks as necessary to eleminate the loops in the topology.
+
+:::STP switches exchange the bridge protocol data units(BPDU) to build the topology of the database.
+
+Electing an STP Root Bridge
+The first step in the STP convergence process is electing a Root Bridge,
+which is the central reference point for the STP topology. As a best practice,
+the Root Bridge should be the most centralized switch in the STP topology.
+A Root Bridge is elected based on its Bridge ID, comprised of two
+components in the original 802.1D standard:
+• 16-bit Bridge priority
+• 48-bit MAC address
+The default priority is 32,768, and the lowest priority wins. If there is a tie
+in priority, the lowest MAC address is used as the tie-breaker.
+
