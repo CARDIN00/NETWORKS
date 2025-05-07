@@ -1,0 +1,45 @@
+#### Hardware Addressing
+A hardware address is used to uniquely identify a host within a local
+network. Hardware addressing is a function of the Data-Link layer of the
+OSI model (Layer-2).
+
+# IP
+:::A core function of IP is to provide logical addressing for hosts
+:::An IPaddress provides a hierarchical structure to both uniquely identify a host,
+and what network that host exists on.
+
+
+## IPv4 Addressing
+
+## The Subnet Mask
+Provides the distinctions to which part of the IP identifies the "network"
+and which part identifies the "host".
+
+
+## SUBNETTING:
+(SKIPPING THE BITS IS NOT ALLOWED IN SUBNET MASKS)
+
+Creating the new networks by Stealing Bits from the :::host::: portion of the subnet mask.
+
+EXAMPLE:
+The default Class C mask (255.255.255.0) looks as
+follows in binary:
+11111111.1111111.1111111.00000000
+::::There are a total of 24 bits set to 1, which are used to identify the network.
+There are a total of 8 bits set to 0, which are used to identify the host, and
+these host bits can be stolen.
+Stealing just means to change the host bits set to "0" to to network bits "1"
+
+# Private vs. Public IPv4 Addresses
+In response to shortening number of available IPv4 addresses, a specific subset of the IPv4 address space was designated as private, to temporarily alleviate this problem.
+
+A public address can be routed on the Internet. Thus, hosts that must be
+Internet-accessible must be configured with (or reachable by) public
+addresses. Allocation of public addresses is governed by the Internet
+Assigned Numbers Authority (IANA).
+
+ A private address is intended for internal use within a home or
+organization, and can be freely used by anyone. However, private addresses
+can never be routed on the Internet. In fact, Internet routers are configured to
+immediately drop traffic with private addresses.
+
